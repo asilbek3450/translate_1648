@@ -5,8 +5,8 @@ from googletrans import Translator
 
 TELEGRAM_API_TOKEN = '6519341247:AAEETJBnMTztXTyObmX7wU4CKXkxPgqimhA'
 
-bot = Bot(token=TELEGRAM_API_TOKEN)
-dp = Dispatcher(bot, proxy='http://proxy.server:3128')
+bot = Bot(token=TELEGRAM_API_TOKEN, proxy='http://proxy.server:3128')
+dp = Dispatcher(bot)
 
 logging.basicConfig(level=logging.INFO)
 
